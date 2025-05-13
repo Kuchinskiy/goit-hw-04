@@ -147,10 +147,15 @@ input[type="radio"].visually-hidden {
 /* Main */
 
 /* Section#1 Hero */
+
 .hero-page {
 	padding-top: 188px;
 	padding-bottom: 188px;
 	background-color: #2e2f42;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/banner-office_sq.jpg);
 }
 
 .hero-title {
