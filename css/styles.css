@@ -153,7 +153,10 @@ input[type="radio"].visually-hidden {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url(../images/banner-office_sq.jpg);
+	background-image: linear-gradient(to bottom,
+	rgba(46, 47, 66, 0.7),
+	rgba(46, 47, 66, 0.7)),
+	url(../images/banner-office_sq.jpg);
 }
 
 .hero-title {
@@ -205,6 +208,12 @@ subtitle & desc-info <<-- for #2, #3, #4 sections*/
 
 .list .item {
 	width: calc((100% - 72px) / 4);
+}
+
+.icon {
+	width: 100%;
+	/* padding: 24px 100px; */
+	background-color: #f4f4fd;
 }
 
 .subtitle {
