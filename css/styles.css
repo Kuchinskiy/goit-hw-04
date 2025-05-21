@@ -304,7 +304,8 @@ section-title <<-- for #3, #4 sections*/
 
 }
 
-.social-list .social-link:hover {
+.social-list .social-link:hover,
+.social-list .social-link:focus {
 	background-color: #404bbf ;
 }
 
@@ -333,8 +334,15 @@ section-title <<-- for #3, #4 sections*/
 	margin-bottom: 0;
 }
 
+.gallery-item:hover {
+	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+/* Overlay for cards */
+
 .gallery-overlay {
 	position: relative;
+	transition-property: opacity 1, background-color;
 }
 
 .gallery-overlay::before {
@@ -354,10 +362,11 @@ section-title <<-- for #3, #4 sections*/
 	padding: 0 32px;
 
 	position: absolute;
-	top: 40%;
+	top: 35%;
 	left: 50%;
 	opacity: 0;
 	transform: translate(-50%, -50%);
+	transition-property: opacity 1;
 }
 
 .gallery-text {
@@ -392,6 +401,11 @@ section-title <<-- for #3, #4 sections*/
 	background-color:  #2e2f42;
 }
 
+.footer-box {
+	display: flex;
+	column-gap: 120px;
+}
+
 .logo-footer {
 	display: inline-block;
 	margin-right: 0;
@@ -407,4 +421,21 @@ section-title <<-- for #3, #4 sections*/
 	max-width: 264px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+}
+
+.footer .social-list {
+	gap: 16px;
+}
+
+.social-box {
+	max-width: 208px;
+}
+
+.social-media {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	margin-bottom: 16px;
 }
