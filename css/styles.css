@@ -385,6 +385,7 @@ section-title <<-- for #3, #4 sections*/
 .items .gallery-item {
 	margin-right: 24px;
 	margin-bottom: 48px;
+	cursor: pointer;
 	width: calc((100% - 48px) / 3);
 
 	transition-duration: 250ms;
